@@ -4,7 +4,7 @@ class DataTypeDemo {
         c = a + b;
         System.out.println("c = " + c);
         byte x = 100, y = 110;
-	int z = x + y;
+        int z = x + y;
         System.out.println("x + y = " + z);
     }
 }
