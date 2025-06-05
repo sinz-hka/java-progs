@@ -40,7 +40,8 @@ prüfbar machen könnten. Aber wie geht das?
 Wir wollen erreichen, dass ein Typ, z.B. `E`, einen Suchschlüssel besitzt, den wir
 mit einer Methode wie `getKey()` uns zurückgeben lassen können. Ein Interface
 erlaubt uns, dies für einen Typ `E` festzulegen. In vielen Programmiersprachen
-hat sich der Name `Identifiable` für ein solches Interface eingebürgert und wir können
+hat sich der Name `Identifiable` für ein solches Interface eingebürgert.
+Die Methode heißt dann meist `getID()` statt `getKey()`, und wir können
 daher definieren:
 
 ```java
@@ -49,6 +50,18 @@ public interface Identifiable<K> {
 }
 ```
 
+Damit können wir nun den Typ-Constraint im Interface `Repository` explizit angeben
+und damit vom Compiler prüfbar machen:
 
+```java
+public interface Repository<E extends Identifiable<K>, K> {
+    void add(E element);   // E must have a key
+    E search(K key);
+    boolean delete(K key); // returns true iff an element was deleted
+}
+```
 
+Mit dem Typ-Constraint `E extends Identifiable<K>` erlauben wir für den Typ `E`
+nur solche Typen, die das Interface `Identifiable<K>` implementieren und damit
+mittels `getID()` einen Suchschlüssel vom Typ `K` zurückgeben können.
 
