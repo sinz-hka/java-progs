@@ -4,7 +4,7 @@ Hier finden Sie Programme, die in der Vorlesung "Informatik 1 - Programmieren" a
 Die Dateien sind anhand der Kapitel der Vorlesung in Ordner gegliedert.
 
 Zur Verwendung ist es am einfachsten, in IntelliJ die folgenden Schritte auszuführen:
-1. Ein neues Projekt anlegen mittels "New > Project from Existing Sources".
+1. Ein neues Projekt anlegen mittels "New > Project from Version Control".
 2. Unter URL eingeben: "https://github.com/sinz-hka/java-progs".
 3. Den "Clone"-Button drücken. Damit wird ein neues Projekt in IntelliJ angelegt, das sämtliche
    Beispiel-Programme aus der Vorlesung enthält.
