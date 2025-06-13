@@ -14,3 +14,13 @@ Diese Aktionen müssen nur einmal beim ersten Einrichten des Git-Repositories au
 Danach können Sie einzelne Projekte anschauen und ausführen. Wechseln Sie dazu in den Ordner eines
 Programmier-Beispiels (z.B. `src/K09_Interfaces_Generics/CampusOrganizer`). Dort öffnen Sie die Datei
 `Main.java`, und führen das Programm durch Click auf das grüne Dreieck neben `main` aus.
+
+In den meisten Projekt-Ordnern gibt es auch eine README-Datei mit weiteren Informationen zum Projekt,
+Fragen und kleinen Aufgaben.
+
+Experimentieren Sie mit den Programmen! Machen Sie Änderungen, führen Sie die Programme Schritt für Schritt
+im Debugger aus!
+
+Wenn Sie wieder zur ursprünglichen Version zurückkehren wollen, ist das kein Problem: Wählen Sie im
+Projekt-Browser auf der linken Seite einfach den Ordner oder die Datei aus, die Sie zurücksetzen wollen,
+führen einen Rechtsclick aus, und wählen im Pop-Up-Menü den Eintrag "Git > Rollback" aus.
