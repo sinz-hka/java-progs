@@ -60,10 +60,12 @@ enum Player {
  * the lowest available row in that column.
  * <p>
  * The class provides:
- *  - methods for updating the board state (insertIntoColumn),
- *  - logic to check for a winning position (hasWon),
- *  - text-based rendering of the game board (toString),
- *  - and an interactive command-line game loop (run).
+ * <ul>
+ *   <li>methods for updating the board state (insertIntoColumn),</li>
+ *   <li>logic to check for a winning position (hasWon),</li>
+ *   <li>text-based rendering of the game board (toString),</li>
+ *   <li>and an interactive command-line game loop (run).</li>
+ * </ul>
  * <p>
  * This class contains all game logic and acts as the central controller
  * for a Connect Four match.
@@ -146,17 +148,21 @@ public class Game {
      * direction specified by (colDelta, rowDelta).
      * <p>
      * The direction is given by a column delta (colDelta) and row delta (rowDelta):
-     *   - (1, 0)  → move right (increase column by one)
-     *   - (-1, 0) → move left (decrease column by one)
-     *   - (0, 1)  → move down
-     *   - (1, 1)  → move down-right (diagonal)
-     *   - (-1,-1) → move up-left (diagonal)
-     *   - etc.
+     * <ul>
+     *   <li>(1, 0)  → move right (increase column by one)</li>
+     *   <li>(-1, 0) → move left (decrease column by one)</li>
+     *   <li>(0, 1)  → move down</li>
+     *   <li>(1, 1)  → move down-right (diagonal)</li>
+     *   <li>(-1,-1) → move up-left (diagonal)</li>
+     *   <li>etc.
+     * </ul>
      * <p>
      * The method stops counting when it reaches:
-     *   - a different-colored field,
-     *   - an EMPTY field,
-     *   - or the edge of the board.
+     * <ul>
+     *   <li>a different-colored field,</li>
+     *   <li>an EMPTY field,</li>
+     *   <li>or the edge of the board.</li>
+     * </ul>
      * <p>
      * It is used by hasWon() to count connected coins in both directions
      * along a line (horizontal, vertical, or diagonal).
@@ -218,12 +224,14 @@ public class Game {
 
     /**
      * Handles a single turn for the given player:
-     *  - repeatedly asks the user to select a column,
-     *  - validates the input,
-     *  - attempts to insert the coin,
-     *  - prints the board,
-     *  - checks whether the move wins the game.
-     *
+     * <ul>
+     *  <li>repeatedly asks the user to select a column,</li>
+     *  <li>validates the input,</li>
+     *  <li>attempts to insert the coin,</li>
+     *  <li>prints the board,</li>
+     *  <li>checks whether the move wins the game.</li>
+     * </ul>
+     * <p>
      * @param player the player whose turn it is
      * @return true if this move wins the game, false otherwise
      */
